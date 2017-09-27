@@ -1,0 +1,15 @@
+
+<div class="container">
+<h1 class="header">Profiles</h1>
+
+<%  @profiles.each do |x| %>
+<div>
+<h1> <%= x.first_name + " " + x.last_name %> </h1>
+<p><%= x.description %></p>
+</div>
+
+<% end %>
+<div class="test">
+<%= will_paginate @profiles %>
+</div>
+</div>
